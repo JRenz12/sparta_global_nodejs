@@ -12,7 +12,8 @@ chef_version '>= 12.14' if respond_to?(:chef_version)
 # uploaded to a Supermarket.
 #
 # issues_url 'https://github.com/<insert_org_here>/mongodb/issues'
-
+depends 'nodejs', '~> 5.0.0'
+depends 'pm2'
 # The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
